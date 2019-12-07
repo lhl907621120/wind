@@ -1,0 +1,1186 @@
+2019-11-26 13:31:12.506  INFO 4732 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 4732 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:31:12.632  INFO 4732 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:31:15.702  INFO 4732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:31:15.789  INFO 4732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2019-11-26 13:31:16.760  INFO 4732 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:31:19.611  INFO 4732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:31:19.624  INFO 4732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:31:19.625  INFO 4732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:31:20.014  INFO 4732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:31:20.014  INFO 4732 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7156 ms
+2019-11-26 13:31:20.727  INFO 4732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:31:21.359  INFO 4732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:31:21.979  INFO 4732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:31:22.315  INFO 4732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:31:24.374  INFO 4732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:31:24.482  INFO 4732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:31:25.543  INFO 4732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:31:25.551  INFO 4732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:31:25.876  WARN 4732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:31:26.632  INFO 4732 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:31:26.914  INFO 4732 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:31:27.627  INFO 4732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:31:27.630  INFO 4732 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 18.716 seconds (JVM running for 22.501)
+2019-11-26 13:31:50.876  INFO 4732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:31:50.877  INFO 4732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:31:50.912  INFO 4732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2019-11-26 13:32:02.618  INFO 4732 --- [http-nio-8080-exec-3] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/3/hello', ip='0:0:0:0:0:0:0:1', ClassMethod='cn.my.system.web.IndexController.index', args=[3, hello]} 
+2019-11-26 13:32:02.618  INFO 4732 --- [http-nio-8080-exec-3] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:32:02.625  INFO 4732 --- [http-nio-8080-exec-3] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:32:02.626  INFO 4732 --- [http-nio-8080-exec-3] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:34:32.881  INFO 13720 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 13720 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:34:32.897  INFO 13720 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:34:34.692  INFO 13720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:34:34.734  INFO 13720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-11-26 13:34:35.177  INFO 13720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:34:36.037  INFO 13720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:34:36.056  INFO 13720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:34:36.057  INFO 13720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:34:36.294  INFO 13720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:34:36.295  INFO 13720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2800 ms
+2019-11-26 13:34:36.684  INFO 13720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:34:36.919  INFO 13720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:34:37.087  INFO 13720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:34:37.201  INFO 13720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:34:38.234  INFO 13720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:34:38.257  INFO 13720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:34:38.909  INFO 13720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:34:38.921  INFO 13720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:34:39.204  WARN 13720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:34:39.628  INFO 13720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:34:39.781  INFO 13720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:34:40.333  INFO 13720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:34:40.338  INFO 13720 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 9.375 seconds (JVM running for 12.387)
+2019-11-26 13:34:45.951  INFO 13720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:34:45.952  INFO 13720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:34:45.985  INFO 13720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
+2019-11-26 13:34:49.724  INFO 13720 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:34:49.725  INFO 13720 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:34:49.734  INFO 13720 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:34:49.734  INFO 13720 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Result : /login
+2019-11-26 13:35:11.551  INFO 12372 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 12372 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:35:11.558  INFO 12372 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:35:12.809  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:35:12.841  INFO 12372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-26 13:35:13.250  INFO 12372 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:35:14.024  INFO 12372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:35:14.036  INFO 12372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:35:14.036  INFO 12372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:35:14.223  INFO 12372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:35:14.224  INFO 12372 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2522 ms
+2019-11-26 13:35:14.555  INFO 12372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:35:14.780  INFO 12372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:35:14.910  INFO 12372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:35:15.017  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:35:15.884  INFO 12372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:35:15.921  INFO 12372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:35:16.316  INFO 12372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:35:16.324  INFO 12372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:35:16.521  WARN 12372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:35:16.919  INFO 12372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:35:17.057  INFO 12372 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:35:17.468  INFO 12372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:35:17.471  INFO 12372 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 7.485 seconds (JVM running for 9.959)
+2019-11-26 13:35:21.289  INFO 12372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:35:21.289  INFO 12372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:35:21.300  INFO 12372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-26 13:35:21.381  INFO 12372 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:35:21.381  INFO 12372 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:35:21.389  INFO 12372 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:35:21.389  INFO 12372 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:37:38.949  INFO 16216 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 16216 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:37:38.969  INFO 16216 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:37:40.306  INFO 16216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:37:40.348  INFO 16216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-11-26 13:37:40.840  INFO 16216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:37:41.494  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:37:41.509  INFO 16216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:37:41.510  INFO 16216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:37:41.793  INFO 16216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:37:41.793  INFO 16216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2519 ms
+2019-11-26 13:37:42.098  INFO 16216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:37:42.370  INFO 16216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:37:42.511  INFO 16216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:37:42.628  INFO 16216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:37:43.647  INFO 16216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:37:43.682  INFO 16216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:37:44.286  INFO 16216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:37:44.303  INFO 16216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:37:44.583  WARN 16216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:37:44.936  INFO 16216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:37:45.087  INFO 16216 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:37:45.633  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:37:45.637  INFO 16216 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 8.737 seconds (JVM running for 11.657)
+2019-11-26 13:37:49.754  INFO 16216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:37:49.754  INFO 16216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:37:49.780  INFO 16216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-11-26 13:37:49.913  INFO 16216 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:37:49.914  INFO 16216 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:37:49.922  INFO 16216 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:37:49.923  INFO 16216 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : /login/login
+2019-11-26 13:38:21.023  INFO 15052 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 15052 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:38:21.033  INFO 15052 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:38:22.678  INFO 15052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:38:22.730  INFO 15052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-11-26 13:38:23.287  INFO 15052 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:38:24.126  INFO 15052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:38:24.146  INFO 15052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:38:24.147  INFO 15052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:38:24.455  INFO 15052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:38:24.455  INFO 15052 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3007 ms
+2019-11-26 13:38:24.821  INFO 15052 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:38:25.064  INFO 15052 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:38:25.205  INFO 15052 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:38:25.309  INFO 15052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:38:26.229  INFO 15052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:38:26.255  INFO 15052 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:38:26.691  INFO 15052 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:38:26.701  INFO 15052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:38:27.004  WARN 15052 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:38:27.401  INFO 15052 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:38:27.551  INFO 15052 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:38:28.082  INFO 15052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:38:28.089  INFO 15052 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 9.01 seconds (JVM running for 12.157)
+2019-11-26 13:39:16.441  INFO 15052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:39:16.441  INFO 15052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:39:16.457  INFO 15052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-26 13:39:16.554  INFO 15052 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:39:16.554  INFO 15052 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:39:16.561  INFO 15052 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:39:16.562  INFO 15052 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : /login
+2019-11-26 13:39:40.590  INFO 7524 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 7524 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:39:40.597  INFO 7524 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:39:41.691  INFO 7524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:39:41.723  INFO 7524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-11-26 13:39:42.198  INFO 7524 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:39:42.874  INFO 7524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:39:42.887  INFO 7524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:39:42.887  INFO 7524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:39:43.137  INFO 7524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:39:43.137  INFO 7524 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2452 ms
+2019-11-26 13:39:43.453  INFO 7524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:39:43.705  INFO 7524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:39:43.852  INFO 7524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:39:44.011  INFO 7524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:39:45.131  INFO 7524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:39:45.156  INFO 7524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:39:45.652  INFO 7524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:39:45.672  INFO 7524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:39:45.996  WARN 7524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:39:46.444  INFO 7524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:39:46.567  INFO 7524 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:39:47.110  INFO 7524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:39:47.114  INFO 7524 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 8.697 seconds (JVM running for 11.34)
+2019-11-26 13:39:56.437  INFO 7524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:39:56.437  INFO 7524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:39:56.456  INFO 7524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-11-26 13:39:56.630  INFO 7524 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:39:56.631  INFO 7524 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:39:56.644  INFO 7524 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:39:56.646  INFO 7524 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:40:15.500  INFO 7524 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:40:15.500  INFO 7524 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:40:15.501  INFO 7524 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:40:15.501  INFO 7524 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:41:13.669  INFO 12296 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 12296 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:41:13.678  INFO 12296 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:41:15.036  INFO 12296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:41:15.081  INFO 12296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-11-26 13:41:15.511  INFO 12296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:41:16.309  INFO 12296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:41:16.320  INFO 12296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:41:16.321  INFO 12296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:41:16.515  INFO 12296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:41:16.516  INFO 12296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2708 ms
+2019-11-26 13:41:16.798  INFO 12296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:41:17.113  INFO 12296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:41:17.327  INFO 12296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:41:17.450  INFO 12296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:41:18.555  INFO 12296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:41:18.587  INFO 12296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:41:19.081  INFO 12296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:41:19.099  INFO 12296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:41:19.444  WARN 12296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:41:19.924  INFO 12296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:41:20.066  INFO 12296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:41:20.549  INFO 12296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:41:20.553  INFO 12296 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 9.063 seconds (JVM running for 12.042)
+2019-11-26 13:41:24.576  INFO 12296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:41:24.576  INFO 12296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:41:24.597  INFO 12296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-11-26 13:41:24.738  INFO 12296 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:41:24.738  INFO 12296 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:41:24.750  INFO 12296 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:41:24.752  INFO 12296 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:42:17.174  INFO 15704 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 15704 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:42:17.184  INFO 15704 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:42:18.502  INFO 15704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:42:18.544  INFO 15704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-11-26 13:42:19.523  INFO 15704 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:42:20.519  INFO 15704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:42:20.535  INFO 15704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:42:20.536  INFO 15704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:42:20.745  INFO 15704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:42:20.745  INFO 15704 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3278 ms
+2019-11-26 13:42:21.097  INFO 15704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:42:21.187  INFO 15704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:42:21.542  INFO 15704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:42:21.653  INFO 15704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:42:22.585  INFO 15704 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:42:22.628  INFO 15704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:42:23.106  INFO 15704 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:42:23.117  INFO 15704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:42:23.386  WARN 15704 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:42:23.844  INFO 15704 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:42:24.035  INFO 15704 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:42:24.644  INFO 15704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:42:24.648  INFO 15704 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 9.681 seconds (JVM running for 12.67)
+2019-11-26 13:42:35.854  INFO 15704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:42:35.855  INFO 15704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:42:35.866  INFO 15704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-26 13:42:35.994  INFO 15704 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:42:35.994  INFO 15704 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:42:36.002  INFO 15704 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:42:36.002  INFO 15704 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:42:36.373 ERROR 15704 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "login": Error resolving template [templates/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [templates/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:42:36.391 ERROR 15704 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [templates/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [templates/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:43:32.976  INFO 13776 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 13776 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:43:32.987  INFO 13776 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:43:34.467  INFO 13776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:43:34.517  INFO 13776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-11-26 13:43:34.933  INFO 13776 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:43:35.606  INFO 13776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:43:35.623  INFO 13776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:43:35.624  INFO 13776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:43:35.895  INFO 13776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:43:35.896  INFO 13776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2489 ms
+2019-11-26 13:43:36.149  INFO 13776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:43:36.412  INFO 13776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:43:36.535  INFO 13776 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:43:36.633  INFO 13776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:43:37.526  INFO 13776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:43:37.550  INFO 13776 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:43:37.953  INFO 13776 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:43:37.961  INFO 13776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:43:38.171  WARN 13776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:43:38.499  INFO 13776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:43:38.683  INFO 13776 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:43:39.121  INFO 13776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:43:39.126  INFO 13776 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 7.752 seconds (JVM running for 10.217)
+2019-11-26 13:43:43.490  INFO 13776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:43:43.490  INFO 13776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:43:43.504  INFO 13776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-26 13:43:43.599  INFO 13776 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:43:43.600  INFO 13776 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:43:43.609  INFO 13776 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:43:43.610  INFO 13776 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:43:43.925 ERROR 13776 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "login": Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:43:43.932 ERROR 13776 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:43:45.894  INFO 13776 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:43:45.894  INFO 13776 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:43:45.894  INFO 13776 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:43:45.894  INFO 13776 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:43:45.896 ERROR 13776 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "login": Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:43:45.899 ERROR 13776 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 3, col 7)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:44:41.832  INFO 14148 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 14148 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:44:41.843  INFO 14148 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:44:43.020  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:44:43.057  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-11-26 13:44:43.443  INFO 14148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:44:44.166  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:44:44.182  INFO 14148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:44:44.183  INFO 14148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:44:44.455  INFO 14148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:44:44.456  INFO 14148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2306 ms
+2019-11-26 13:44:44.805  INFO 14148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:44:45.065  INFO 14148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:44:45.209  INFO 14148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:44:45.317  INFO 14148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:44:46.321  INFO 14148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:44:46.348  INFO 14148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:44:46.747  INFO 14148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:44:46.755  INFO 14148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:44:47.018  WARN 14148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:44:47.390  INFO 14148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:44:47.525  INFO 14148 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:44:47.989  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:44:47.993  INFO 14148 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 7.887 seconds (JVM running for 10.811)
+2019-11-26 13:44:52.250  INFO 14148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:44:52.251  INFO 14148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:44:52.262  INFO 14148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-26 13:44:52.356  INFO 14148 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:44:52.357  INFO 14148 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:44:52.362  INFO 14148 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:44:52.363  INFO 14148 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:44:52.959 ERROR 14148 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "login": Error resolving template [admin/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 69, col 11)
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 69, col 11)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:44:52.968 ERROR 14148 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 69, col 11)] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [admin/_fragments], template might not exist or might not be accessible by any of the configured Template Resolvers (template: "login" - line 69, col 11)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:250)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:46:01.426  INFO 15720 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 15720 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:46:01.435  INFO 15720 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:46:02.430  INFO 15720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:46:02.474  INFO 15720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-11-26 13:46:02.996  INFO 15720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:46:03.699  INFO 15720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:46:03.710  INFO 15720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:46:03.711  INFO 15720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:46:03.967  INFO 15720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:46:03.968  INFO 15720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2461 ms
+2019-11-26 13:46:04.606  INFO 15720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:46:04.961  INFO 15720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:46:05.277  INFO 15720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:46:05.499  INFO 15720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:46:06.571  INFO 15720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:46:06.596  INFO 15720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:46:07.297  INFO 15720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:46:07.307  INFO 15720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:46:07.538  WARN 15720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:46:08.027  INFO 15720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:46:08.185  INFO 15720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:46:08.667  INFO 15720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:46:08.674  INFO 15720 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 9.79 seconds (JVM running for 12.689)
+2019-11-26 13:46:43.939  INFO 15720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:46:43.940  INFO 15720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:46:43.956  INFO 15720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-11-26 13:46:44.057  INFO 15720 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:46:44.057  INFO 15720 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:46:44.065  INFO 15720 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:46:44.065  INFO 15720 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:46:44.776 ERROR 15720 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "login": Error resolving fragment: "~{_fragment :: script}": template or fragment could not be resolved (template: "login" - line 69, col 11)
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{_fragment :: script}": template or fragment could not be resolved (template: "login" - line 69, col 11)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:46:44.782 ERROR 15720 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{_fragment :: script}": template or fragment could not be resolved (template: "login" - line 69, col 11)] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{_fragment :: script}": template or fragment could not be resolved (template: "login" - line 69, col 11)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-11-26 13:47:45.956  INFO 12504 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 12504 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 13:47:45.966  INFO 12504 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 13:47:47.344  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 13:47:47.378  INFO 12504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-26 13:47:47.889  INFO 12504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 13:47:48.602  INFO 12504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 13:47:48.618  INFO 12504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 13:47:48.618  INFO 12504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 13:47:48.871  INFO 12504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 13:47:48.871  INFO 12504 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2573 ms
+2019-11-26 13:47:49.241  INFO 12504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 13:47:49.550  INFO 12504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 13:47:49.773  INFO 12504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 13:47:49.959  INFO 12504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 13:47:50.871  INFO 12504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 13:47:50.898  INFO 12504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 13:47:51.388  INFO 12504 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 13:47:51.397  INFO 12504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 13:47:51.623  WARN 12504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 13:47:52.056  INFO 12504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 13:47:52.272  INFO 12504 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 13:47:52.776  INFO 12504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 13:47:52.780  INFO 12504 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 8.861 seconds (JVM running for 11.632)
+2019-11-26 13:47:58.829  INFO 12504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 13:47:58.830  INFO 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 13:47:58.841  INFO 12504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-26 13:47:58.963  INFO 12504 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:47:58.964  INFO 12504 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:47:58.977  INFO 12504 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:47:58.978  INFO 12504 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:51:31.590  INFO 12504 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:51:31.591  INFO 12504 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:51:31.591  INFO 12504 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:51:31.591  INFO 12504 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 13:51:33.842  INFO 12504 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 13:51:33.842  INFO 12504 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 13:51:33.842  INFO 12504 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 13:51:33.843  INFO 12504 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:02:06.550  INFO 13676 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 13676 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 14:02:06.580  INFO 13676 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 14:02:07.959  INFO 13676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 14:02:08.001  INFO 13676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-11-26 14:02:08.473  INFO 13676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 14:02:09.388  INFO 13676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 14:02:09.400  INFO 13676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 14:02:09.400  INFO 13676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 14:02:09.711  INFO 13676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 14:02:09.711  INFO 13676 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3022 ms
+2019-11-26 14:02:10.178  INFO 13676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 14:02:10.580  INFO 13676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 14:02:11.634  INFO 13676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 14:02:11.818  INFO 13676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 14:02:13.330  INFO 13676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 14:02:13.449  INFO 13676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 14:02:14.164  INFO 13676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 14:02:14.171  INFO 13676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 14:02:14.407  WARN 13676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 14:02:14.838  INFO 13676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 14:02:15.030  INFO 13676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 14:02:15.546  INFO 13676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 14:02:15.550  INFO 13676 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 11.236 seconds (JVM running for 15.095)
+2019-11-26 14:02:21.215  INFO 13676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 14:02:21.216  INFO 13676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 14:02:21.247  INFO 13676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2019-11-26 14:02:21.383  INFO 13676 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:02:21.384  INFO 13676 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:02:21.392  INFO 13676 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:02:21.393  INFO 13676 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:02:24.461  INFO 13676 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:02:24.461  INFO 13676 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:02:24.461  INFO 13676 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:02:24.461  INFO 13676 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:11:36.922  INFO 14368 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 14368 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 14:11:36.932  INFO 14368 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 14:11:38.286  INFO 14368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 14:11:38.319  INFO 14368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-11-26 14:11:38.843  INFO 14368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 14:11:39.556  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 14:11:39.568  INFO 14368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 14:11:39.569  INFO 14368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 14:11:39.781  INFO 14368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 14:11:39.782  INFO 14368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2726 ms
+2019-11-26 14:11:40.122  INFO 14368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 14:11:40.416  INFO 14368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 14:11:40.597  INFO 14368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 14:11:40.731  INFO 14368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 14:11:41.805  INFO 14368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 14:11:41.839  INFO 14368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 14:11:42.319  INFO 14368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 14:11:42.327  INFO 14368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 14:11:42.549  WARN 14368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 14:11:42.912  INFO 14368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 14:11:43.071  INFO 14368 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 14:11:43.607  INFO 14368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 14:11:43.615  INFO 14368 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 8.652 seconds (JVM running for 11.418)
+2019-11-26 14:11:53.518  INFO 14368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 14:11:53.519  INFO 14368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 14:11:53.533  INFO 14368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-26 14:11:53.641  INFO 14368 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:11:53.642  INFO 14368 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:11:53.652  INFO 14368 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:11:53.653  INFO 14368 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:24:47.691  INFO 13832 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 13832 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 14:24:47.700  INFO 13832 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 14:24:49.444  INFO 13832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 14:24:49.509  INFO 13832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-11-26 14:24:50.055  INFO 13832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 14:24:50.824  INFO 13832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 14:24:50.838  INFO 13832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 14:24:50.839  INFO 13832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 14:24:51.141  INFO 13832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 14:24:51.142  INFO 13832 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3311 ms
+2019-11-26 14:24:51.661  INFO 13832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 14:24:51.993  INFO 13832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 14:24:52.292  INFO 13832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 14:24:52.492  INFO 13832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 14:24:53.726  INFO 13832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 14:24:53.751  INFO 13832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 14:24:54.248  INFO 13832 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 14:24:54.258  INFO 13832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 14:24:54.529  WARN 13832 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 14:24:55.196  INFO 13832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 14:24:55.509  INFO 13832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 14:24:56.376  INFO 13832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 14:24:56.384  INFO 13832 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 10.798 seconds (JVM running for 14.252)
+2019-11-26 14:25:07.040  INFO 13832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 14:25:07.040  INFO 13832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 14:25:07.059  INFO 13832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-11-26 14:25:07.184  INFO 13832 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.login', args=[]} 
+2019-11-26 14:25:07.184  INFO 13832 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:25:07.195  INFO 13832 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:25:07.196  INFO 13832 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:25:12.936  INFO 13832 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:25:12.936  INFO 13832 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:25:12.936  INFO 13832 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:25:12.936  INFO 13832 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:25:29.241  INFO 13832 --- [http-nio-8080-exec-8] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.login', args=[]} 
+2019-11-26 14:25:29.241  INFO 13832 --- [http-nio-8080-exec-8] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:25:29.241  INFO 13832 --- [http-nio-8080-exec-8] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:25:29.241  INFO 13832 --- [http-nio-8080-exec-8] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:29:41.945  INFO 14316 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 14316 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 14:29:41.951  INFO 14316 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 14:29:42.958  INFO 14316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 14:29:43.000  INFO 14316 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-11-26 14:29:43.432  INFO 14316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 14:29:44.137  INFO 14316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 14:29:44.150  INFO 14316 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 14:29:44.150  INFO 14316 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 14:29:44.341  INFO 14316 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 14:29:44.342  INFO 14316 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2292 ms
+2019-11-26 14:29:44.644  INFO 14316 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 14:29:44.880  INFO 14316 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 14:29:45.048  INFO 14316 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 14:29:45.201  INFO 14316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 14:29:46.188  INFO 14316 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 14:29:46.221  INFO 14316 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 14:29:46.670  INFO 14316 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 14:29:46.677  INFO 14316 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 14:29:46.899  WARN 14316 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 14:29:47.316  INFO 14316 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 14:29:47.508  INFO 14316 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 14:29:48.004  INFO 14316 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 14:29:48.008  INFO 14316 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 8.317 seconds (JVM running for 11.163)
+2019-11-26 14:29:56.418  INFO 14316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 14:29:56.419  INFO 14316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 14:29:56.465  INFO 14316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 46 ms
+2019-11-26 14:30:00.641  INFO 14316 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.login', args=[]} 
+2019-11-26 14:30:00.641  INFO 14316 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:30:00.649  INFO 14316 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:30:00.650  INFO 14316 --- [http-nio-8080-exec-2] cn.my.system.aspect.LogAspect            : Result : login
+2019-11-26 14:30:10.605  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:30:10.606  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:30:10.606  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:30:10.606  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:40:18.905  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:40:18.905  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:40:18.905  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:40:18.905  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:46:03.959  INFO 14316 --- [http-nio-8080-exec-4] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:46:03.959  INFO 14316 --- [http-nio-8080-exec-4] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:46:03.959  INFO 14316 --- [http-nio-8080-exec-4] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:46:03.959  INFO 14316 --- [http-nio-8080-exec-4] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:46:13.076  INFO 14316 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:46:13.076  INFO 14316 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:46:13.076  INFO 14316 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:46:13.077  INFO 14316 --- [http-nio-8080-exec-10] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:46:47.332  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:46:47.333  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:46:47.333  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:46:47.333  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:46:49.323  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:46:49.324  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:46:49.324  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:46:49.324  INFO 14316 --- [http-nio-8080-exec-5] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:52:58.499  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:52:58.500  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:52:58.500  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:52:58.500  INFO 14316 --- [http-nio-8080-exec-7] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:53:14.246  INFO 16744 --- [main] cn.my.system.SystemApplication           : Starting SystemApplication on Bean-PC with PID 16744 (started by Bean in D:\IntelliJ IDEA 2019.1.2\system)
+2019-11-26 14:53:14.255  INFO 16744 --- [main] cn.my.system.SystemApplication           : No active profile set, falling back to default profiles: default
+2019-11-26 14:53:15.385  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-26 14:53:15.414  INFO 16744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-26 14:53:15.814  INFO 16744 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-26 14:53:16.415  INFO 16744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-26 14:53:16.426  INFO 16744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-26 14:53:16.427  INFO 16744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-26 14:53:16.624  INFO 16744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-26 14:53:16.625  INFO 16744 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2110 ms
+2019-11-26 14:53:16.861  INFO 16744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-26 14:53:17.138  INFO 16744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-26 14:53:17.265  INFO 16744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-26 14:53:17.356  INFO 16744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-26 14:53:18.235  INFO 16744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-26 14:53:18.266  INFO 16744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-26 14:53:18.626  INFO 16744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-26 14:53:18.635  INFO 16744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-26 14:53:18.846  WARN 16744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-26 14:53:19.210  INFO 16744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-26 14:53:19.365  INFO 16744 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-26 14:53:19.772  INFO 16744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-26 14:53:19.775  INFO 16744 --- [main] cn.my.system.SystemApplication           : Started SystemApplication in 7.436 seconds (JVM running for 9.815)
+2019-11-26 14:53:24.423  INFO 16744 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-26 14:53:24.423  INFO 16744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-26 14:53:24.434  INFO 16744 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-26 14:53:24.522  INFO 16744 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/index', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.index', args=[]} 
+2019-11-26 14:53:24.522  INFO 16744 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:53:24.527  INFO 16744 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:53:24.528  INFO 16744 --- [http-nio-8080-exec-1] cn.my.system.aspect.LogAspect            : Result : index
+2019-11-26 14:53:49.779  INFO 16744 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', ClassMethod='cn.my.system.web.IndexController.login', args=[]} 
+2019-11-26 14:53:49.779  INFO 16744 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : ---------doBefore-----------
+2019-11-26 14:53:49.779  INFO 16744 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : ---------doAfter-----------
+2019-11-26 14:53:49.780  INFO 16744 --- [http-nio-8080-exec-9] cn.my.system.aspect.LogAspect            : Result : login

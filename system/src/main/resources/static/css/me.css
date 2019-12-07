@@ -1,0 +1,275 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*需将主区域内容（不包括footer）设置为此class，一般为div*/
+.page{
+    box-sizing: border-box;/*为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制*/
+    min-height: 100%;
+    padding-bottom: 25px;
+}
+footer {
+    height: 25px;
+    margin-top: -100px!important;
+
+}
+body {
+    background: url("../images/bg.png");
+}
+
+.m-background{
+    background-color: #18191B;
+    background-size: 10px!important;
+}
+
+
+.m-padded-mini {
+    padding: 0.2em !important;
+}
+
+.m-padded-tiny {
+    padding: 0.3em !important;
+}
+.m-padded {
+    padding: 1em !important;
+}
+.m-padded-top {
+    padding-top: 0.5em !important;
+}
+.m-padded-toper {
+    padding-top: 0.8em !important;
+}
+.container{width:100%;min-height:100%;position:relative;}
+.body{padding-bottom:50px;}
+.footer{height:50px;position:fixed;bottom:0px;left:0px;}
+/*
+上下间隔0.2*14像素
+*/
+.m-padded-tb-segment {
+padding-bottom: 0.8em!important;
+}
+.m-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+.m-padded-tb-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+.m-padded-tb-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded-tb {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb-large {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-top {
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-huge {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.m-padded-tb-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.m-padded-right    {
+
+    padding-right: 3em!important;
+}
+.m-padded-lr    {
+    padding-left: 4em!important;
+    padding-right: 4em!important;
+}
+.m-padded-lr-responsive {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
+/*-------text -----*/
+
+.m-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+/*字大小*/
+.m-text-thin {
+    font-weight: 300 !important;
+}
+/*字间距*/
+.m-text-spaced {
+    letter-spacing: 1px !important;
+}
+/*行间距*/
+.m-text-lined {
+    line-height: 1.8;
+}
+.m-text-color{
+    color: white;
+}
+
+/*-----margin------*/
+
+.m-margin-top-small {
+    margin-top:0.5em !important;
+}
+
+.m-margin-top-large {
+    margin-top: 2em !important;
+}
+
+
+.m-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-margin-bottom-small {
+    margin-bottom: 0.5em !important;
+
+}
+.m-margin-bottom {
+    margin-bottom: 10px!important;
+    margin-top: 5px!important;
+
+}
+.m-margin-bottom-segment {
+
+    margin-top: 1em!important;
+ }
+
+
+/*-----opacity------*/
+/*透明度*/
+.m-opacity-mini {
+    opacity: 0.8 !important;
+}
+.m-opacity-tiny {
+    opacity: 0.6 !important;
+}
+.m-opacity {
+    opacity: 0.9 !important;
+}
+/*------position---*/
+
+.m-right-top {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+/*------display------*/
+/*行内显示*/
+.m-inline-block {
+    display: inline-block !important;
+}
+
+
+/*-----container*/
+
+.m-container {
+    max-width: 72em !important;
+    margin: auto !important;
+}
+.m-container-small {
+    max-width: 60em !important;
+    margin: auto !important;
+}
+
+/*------shadow------*/
+.m-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/*------positon-----*/
+
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+.main{
+    text-align: center; /*让div内部文字居中*/
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/*-----color-----*/
+.m-black {
+    color: #333 !important;
+}
+.m-teal {
+    color: #00B5AD !important;
+}
+html{height:100%;}
+
+body{min-height:100%;margin:0;padding:0;position:relative;}
+
+
+
+
+
+.m-mobile-show {
+   display: none !important;
+}
+.signup-footer {
+    margin-bottom: 10px;
+}
+
+/*.signup-footer {*/
+/*    border-top: solid 1px rgba(255, 255, 255, .3);*/
+/*    padding-top: 15px;*/
+
+/*    position:absolute;*/
+/*    bottom: 20px;*/
+/*    left: 10%;*/
+/*    width: 80%;*/
+/*}*/
+@media screen and (max-width: 768px){
+    .m-mobile-hide {
+        display: none !important;
+    }
+    .m-mobile-show {
+        display: block !important;
+    }
+    .m-padded-lr-responsive {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-mobile-wide {
+        width: 100% !important;
+    }
+}
