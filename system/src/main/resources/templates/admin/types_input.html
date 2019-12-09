@@ -12,7 +12,6 @@
 <!--inverted翻转颜色 attached取消圆角 segment片段 link链接  transparent透明
     vertical垂直      grid将布局分成16份    divided分割线  center aligned中心居中
     link list竖向列表   section间隔   container响应式布局  fluid填充 stackable可堆叠-->
-
 <body >
 <div class="page">
 <!--导航-->
@@ -52,7 +51,7 @@
 <!--中间体内容-->
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
-        <form action="#"method="post" th:action="*{id}==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" th:object="${type}" class="ui form">
+        <form action="#" method="post" th:action="*{id}==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" th:object="${type}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="field">
             </div>
@@ -81,7 +80,6 @@
                 <button class="ui secondary basic submit button"><i class="ui upload icon"></i>提交</button>
             </div>
         </form>
-
     </div>
 </div>
     </div>
@@ -123,7 +121,6 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <script src="../../static/lib/editormd/editormd.min.js"></script>
-
 <!--/*/</th:block>/*/-->
 <!--展开关闭导航栏-->
 <script>

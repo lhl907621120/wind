@@ -15,6 +15,7 @@ public class Blog {
     private String content;
     private String firstPicture;
     private String flag;
+    private String description;
     private Integer view;
     private boolean appreciation;
     private boolean shareStatement;
@@ -77,6 +78,7 @@ public class Blog {
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
+                ", description='" + description + '\'' +
                 ", view=" + view +
                 ", appreciation=" + appreciation +
                 ", shareStatement=" + shareStatement +
@@ -85,6 +87,10 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", user=" + user +
+                ", comments=" + comments +
                 '}';
     }
 
@@ -190,5 +196,13 @@ public class Blog {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

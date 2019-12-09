@@ -1,7 +1,7 @@
 package cn.my.system.web.admin;
-
 import cn.my.system.entity.Blog;
 import cn.my.system.service.BlogService;
+import cn.my.system.service.TagService;
 import cn.my.system.service.TypeService;
 import cn.my.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/admin")
@@ -26,6 +27,9 @@ public class BlogController {
 
     @Autowired
     private TypeService typeService;
+
+    @Autowired
+    private TagService tagService;
 
     @GetMapping("/blogs")
     public String list(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
@@ -41,5 +45,12 @@ public class BlogController {
     public String Search(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
         model.addAttribute("blog_page", blogService.listBlog(pageable, blog));
         return "/admin/blogs :: blogList";
+    }
+    @GetMapping("/blogs/input")
+    public String input(Model model){
+        model.addAttribute("blog", new Blog());
+        model.addAttribute("tags", tagService.listTag());
+        model.addAttribute("types", typeService.listType());
+        return "/admin/blogs-input";
     }
 }

@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title th:replace="${title}">博客后台管理</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
-    <link rel="stylesheet" href="../../static/css/animate.css" th:href="@{/css/animate.css}">
-    <link rel="stylesheet" href="../../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
-    <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
     <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
 </head>
 <body>
+<div class="page">
 <!--导航-->
 <nav  th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h1 class="ui green header m-padded-top">管理后台</h1>
-            <a href="#" th:href="@{/admin/blogs}"class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="large home icon"></i>博客</a>
+            <a href="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="large home icon"></i>博客</a>
             <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="large idea icon"></i>分类</a>
-            <a href="#" th:href="@{/admin/tags}"class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="large tags icon"></i>标签</a>
+            <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="large tags icon"></i>标签</a>
             <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="large user icon"></i>关于我</a>
             <div class="ui dropdown m-item right item m-mobile-hide">
                 <div class="text">
@@ -41,6 +39,7 @@
 <br>
 <br>
 <br>
+    </div>
 <!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical m-padded-tb-massive">
     <div class="ui center aligned container m-background fluid">
@@ -78,14 +77,7 @@
 <th:block th:fragment="script">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="../../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
-    <script src="../../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
-    <script src="../../static/lib/qrcode/qrcode.js" th:src="@{/lib/qrcode/qrcode.js}"></script>
-    <script src="../../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
     <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
-
 </th:block>
 </body>
 </html>
