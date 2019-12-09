@@ -19,28 +19,32 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
+
 @Service
-public class BlogServiceImpl implements BlogService{
+public class BlogServiceImpl implements BlogService {
     @Autowired
     private BlogRepository blogRepository;
+
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
         return blogRepository.save(blog);
     }
+
     @Transactional
     @Override
     public void deleteBlog(Long id) {
         blogRepository.deleteById(id);
     }
+
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogRepository.getOne(id);
-        if (b==null){
+        if (b == null) {
             throw new NoFoundException("该博客不存在!");
         }
-        BeanUtils.copyProperties(blog,b);
+        BeanUtils.copyProperties(blog, b);
         return blogRepository.save(b);
     }
 
@@ -57,19 +61,19 @@ public class BlogServiceImpl implements BlogService{
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 List<Predicate> predicates = new ArrayList<>();
 
-                if (blog.getTitle()!=null&&!"".equals(blog.getTitle())){
-                    predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
+                if (blog.getTitle() != null && !"".equals(blog.getTitle())) {
+                    predicates.add(criteriaBuilder.like(root.<String>get("title"), "%" + blog.getTitle() + "%"));
                 }
-                if (blog.getTypeId()!=null){
-                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
+                if (blog.getTypeId() != null) {
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"), blog.getTypeId()));
                 }
-                if (blog.isRecommend()){
-                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
+                if (blog.isRecommend()) {
+                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"), blog.isRecommend()));
                 }
-                criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
+                criteriaQuery.where(predicates.toArray(new Predicate[0]));
                 return null;
 
             }
-        },pageable);
+        }, pageable);
     }
 }

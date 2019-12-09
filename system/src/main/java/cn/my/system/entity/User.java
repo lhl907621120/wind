@@ -22,7 +22,7 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
     @OneToMany(mappedBy = "user")
-    private List<Blog> blogs =new ArrayList<>();
+    private List<Blog> blogs = new ArrayList<>();
 
     public List<Blog> getBlogs() {
         return blogs;

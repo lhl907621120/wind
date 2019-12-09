@@ -20,16 +20,16 @@ public class Comment {
 
     @ManyToOne
     private Blog blog;
-/*
-子评论类
- */
+    /*
+    子评论类
+     */
     @ManyToOne
     private Comment parentComment;
-/*
-主评论类
- */
+    /*
+    主评论类
+     */
     @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replycomments =new ArrayList<>();
+    private List<Comment> replycomments = new ArrayList<>();
 
     public Comment getParentComment() {
         return parentComment;
@@ -54,7 +54,6 @@ public class Comment {
     public void setBlog(Blog blog) {
         this.blog = blog;
     }
-
 
 
     public Long getId() {

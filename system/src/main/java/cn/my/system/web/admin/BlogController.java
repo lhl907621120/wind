@@ -17,23 +17,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/admin")
 public class BlogController {
-    @Autowired
     private BlogService blogService;
+
+    @Autowired
+    public BlogController(BlogService blogService){
+        this.blogService = blogService;
+    }
+
     @Autowired
     private TypeService typeService;
 
     @GetMapping("/blogs")
-    public String list(@PageableDefault(size = 3,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
-        model.addAttribute("types",typeService.listType());
-        model.addAttribute("blog_page",blogService.listBlog(pageable,blog));
+    public String list(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
+        model.addAttribute("types", typeService.listType());
+        model.addAttribute("blog_page", blogService.listBlog(pageable, blog));
         return "/admin/blogs";
     }
+
     /*
     局部动态渲染
     */
     @PostMapping("/blogs/search")
-    public String Search(@PageableDefault(size = 3,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
-        model.addAttribute("blog_page",blogService.listBlog(pageable,blog));
+    public String Search(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
+        model.addAttribute("blog_page", blogService.listBlog(pageable, blog));
         return "/admin/blogs :: blogList";
     }
 }

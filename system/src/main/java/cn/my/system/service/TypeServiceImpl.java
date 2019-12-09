@@ -15,8 +15,12 @@ import java.util.List;
 
 @Service
 public class TypeServiceImpl implements TypeService {
-    @Autowired
     private TypeRepository typeRepository;
+
+    @Autowired
+    public TypeServiceImpl(TypeRepository typeRepository) {
+        this.typeRepository = typeRepository;
+    }
 
     @Transactional
     @Override
@@ -37,12 +41,12 @@ public class TypeServiceImpl implements TypeService {
     @Transactional
     @Override
     public Type update(Long id, Type type) {
-      Type t = typeRepository.getOne(id);
-      if (t==null){
-          throw new NoFoundException("不存在该类型");
-      }
-        BeanUtils.copyProperties(type,t);
-      return typeRepository.save(t);
+        Type t = typeRepository.getOne(id);
+        if (t == null) {
+            throw new NoFoundException("不存在该类型");
+        }
+        BeanUtils.copyProperties(type, t);
+        return typeRepository.save(t);
     }
 
     @Transactional

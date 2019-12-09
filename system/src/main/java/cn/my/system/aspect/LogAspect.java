@@ -15,32 +15,37 @@ import java.util.Arrays;
 @Component
 public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Pointcut("execution(* cn.my.system.web.*.*(..))")
-    public void log(){
+    public void log() {
     }
+
     @Before("log()")
-    public void doBefore(JoinPoint joinPoint){
+    public void doBefore(JoinPoint joinPoint) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        assert attributes != null;
         HttpServletRequest request = attributes.getRequest();
         StringBuffer url = request.getRequestURL();
         String ip = request.getRemoteAddr();
         String classMethod = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
-        RequestLog requestLog = new RequestLog(url,ip,classMethod,args);
-        logger.info("Request : {} ",requestLog);
-    logger.info("---------doBefore-----------");
-    }
-    @After("log()")
-    public void doAfter(){
-        logger.info("---------doAfter-----------");
-    }
-    @AfterReturning(returning = "result",pointcut = "log()")
-    public void doAfterRuturn(Object result){
-        logger.info("Result : {}" , result);
+        RequestLog requestLog = new RequestLog(url, ip, classMethod, args);
+        logger.info("Request : {} ", requestLog);
+        logger.info("---------doBefore-----------");
     }
 
-    private class RequestLog{
-        public RequestLog(StringBuffer url, String ip, String classMethod, Object[] args) {
+    @After("log()")
+    public void doAfter() {
+        logger.info("---------doAfter-----------");
+    }
+
+    @AfterReturning(returning = "result", pointcut = "log()")
+    public void doAfterRuturn(Object result) {
+        logger.info("Result : {}", result);
+    }
+
+    private class RequestLog {
+        RequestLog(StringBuffer url, String ip, String classMethod, Object[] args) {
             this.url = url;
             this.ip = ip;
             ClassMethod = classMethod;
@@ -51,7 +56,6 @@ public class LogAspect {
         private String ip;
         private String ClassMethod;
         private Object[] args;
-
 
 
         @Override
