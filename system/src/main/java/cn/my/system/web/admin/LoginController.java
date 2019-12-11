@@ -24,7 +24,7 @@ public class LoginController {
         return "admin/login";
     }
 
-    @PostMapping("admin/login")
+    @PostMapping("/admin/login")
     public String login(@RequestParam(required = false) String username, @RequestParam(required = false) String password, HttpSession session, RedirectAttributes attributes) {
         User user = userService.checkUser(username, password);
         if (user != null) {
@@ -32,7 +32,7 @@ public class LoginController {
             session.setAttribute("user", user);
             return "admin/my_index";
         } else {
-            attributes.addFlashAttribute("message", "用户名密码错误");
+            attributes.addFlashAttribute("message", "Message：请输入正确的用户名密码");
             return "redirect:/admin";
         }
 
