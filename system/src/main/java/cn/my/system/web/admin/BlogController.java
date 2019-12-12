@@ -11,10 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
@@ -75,5 +72,15 @@ public class BlogController {
             attributes.addFlashAttribute("message", "操作成功");
         }
         return "redirect:/admin/blogs";
+    }
+//来到修改页面，查出要修改的博客，在页面回显
+    @GetMapping("/blogs/{id}/input")
+    public String toEditPage(@PathVariable("id") Long id, Model model, Pageable pageable, BlogQuery blogQuery){
+        Blog blog = blogService.getBlog(id);
+        model.addAttribute("blog", blog);
+        model.addAttribute("types", typeService.listType());
+        model.addAttribute("tags", tagService.listTag(blog.getTagIds()));
+//        回到修改页面
+        return "/admin/blogs-input";
     }
 }

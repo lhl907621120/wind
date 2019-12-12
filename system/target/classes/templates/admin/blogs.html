@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head th:replace="admin/my_fragment :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,13 +88,14 @@
         </form>
         <div id="table-container">
 
-        <table th:fragment="blogList" class="ui celled table">
+        <table th:fragment="blogList" class="ui compact teal table">
             <thead>
             <tr>
                 <th></th>
                 <th>标题</th>
                 <th>类型</th>
                 <th>推荐</th>
+                <th>状态</th>
                 <th>更新时间</th>
                 <th>操作</th>
             </tr>
@@ -106,16 +107,17 @@
                 <td th:text="${blog.title}">刻意练习清单</td>
                 <td th:text="${blog.type.name}">认知升级</td>
                 <td th:text="${blog.recommend} ? '是':'否'">是</td>
+                <td th:text="${blog.publish} ? '发布':'草稿'">是</td>
                 <td th:text="${blog.updateTime}">2019-11-28 10:00</td>
                 <td>
-                    <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button "><i class="edit icon"></i>编辑</a>
-                    <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button"><i class=" delete icon"></i>删除</a>
+                    <a th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button "><i class="edit icon"></i>编辑</a>
+                    <a th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button"><i class=" delete icon"></i>删除</a>
                 </td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <th colspan="6">
+                <th colspan="8">
                     <div class="ui right floated pagination menu mini"  th:if="${blog_page.totalPages}>1">
                         <a onclick="page(this)" th:attr="data-page=${blog_page.number}-1" class="item" th:unless="${page.first}">上一页</a>
                         <a onclick="page(this)" th:attr="data-page=${blog_page.number}+1" class="item" th:unless="${page.last}">下一页</a>
@@ -123,7 +125,6 @@
                 </th>
             </tr>
             </tfoot>
-
         </table>
             <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
                 <i class="close icon"></i>
