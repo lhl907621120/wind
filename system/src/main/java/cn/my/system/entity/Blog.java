@@ -12,6 +12,9 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
+
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String content;
     private String firstPicture;
     private String flag;
@@ -102,6 +105,7 @@ public class Blog {
                 ", tags=" + tags +
                 ", user=" + user +
                 ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
                 '}';
     }
 
@@ -215,5 +219,27 @@ public class Blog {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void init() {
+        this.tagIds = tagsToIds(this.getTags());
+    }
+
+    private String tagsToIds(List<Tag> tags) {
+        if (!tags.isEmpty()) {
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for (Tag tag : tags) {
+                if (flag) {
+                    ids.append(",");
+                } else {
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        } else {
+            return tagIds;
+        }
     }
 }

@@ -23,18 +23,24 @@ import java.util.List;
 
 @Service
 public class BlogServiceImpl implements BlogService {
+
     @Autowired
     private BlogRepository blogRepository;
 
     /*
     新增博客时初始化创建时间、浏览次数
+    修改博客时更新时间
      */
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
-        blog.setCreateTime(new Date());
-        blog.setUpdateTime(new Date());
-        blog.setView(0);
+        if (blog.getId() == null) {
+            blog.setCreateTime(new Date());
+            blog.setUpdateTime(new Date());
+            blog.setView(0);
+        } else {
+            blog.setUpdateTime(new Date());
+        }
         return blogRepository.save(blog);
     }
 

@@ -1,7 +1,10 @@
 spring:
   thymeleaf:
-    mode: LEGACYHTML5
+    mode: HTML
     cache: false
+    suffix: .html
+    encoding: utf-8
+    prefix: classpath:/templates/
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
