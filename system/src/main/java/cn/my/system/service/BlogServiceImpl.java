@@ -28,8 +28,9 @@ public class BlogServiceImpl implements BlogService {
     private BlogRepository blogRepository;
 
     /*
-    新增博客时初始化创建时间、浏览次数
-    修改博客时更新时间
+    新增博客时初始化创建时间、更新时间，浏览次数
+    修改博客时修改更新时间
+    @Transactional管理事务控制增删改
      */
     @Transactional
     @Override
@@ -40,6 +41,7 @@ public class BlogServiceImpl implements BlogService {
             blog.setView(0);
         } else {
             blog.setUpdateTime(new Date());
+
         }
         return blogRepository.save(blog);
     }
@@ -49,16 +51,20 @@ public class BlogServiceImpl implements BlogService {
     public void deleteBlog(Long id) {
         blogRepository.deleteById(id);
     }
-
+    /*
+    b为原博客，blog为更新内容后的博客
+    copyProperties(Object source, Object target)
+    source为初始对象     target为目标对象
+     */
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
-        Blog b = blogRepository.getOne(id);
-        if (b == null) {
-            throw new NoFoundException("该博客不存在!");
-        }
-        BeanUtils.copyProperties(blog, b);
-        return blogRepository.save(b);
+        Blog b = blogRepository.findById(id).orElse(null);
+        System.out.println(b);
+        blog.setUpdateTime(new Date());
+        blog.setView(b.getView());
+        blog.setCreateTime(b.getCreateTime());
+        return blogRepository.save(blog);
     }
 
     @Override
@@ -88,5 +94,10 @@ public class BlogServiceImpl implements BlogService {
 
             }
         }, pageable);
+    }
+
+    @Override
+    public Blog getBlogByTitle(String title) {
+        return blogRepository.findByTitle(title);
     }
 }

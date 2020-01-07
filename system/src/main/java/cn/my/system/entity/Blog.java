@@ -1,6 +1,7 @@
 package cn.my.system.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,6 +12,7 @@ public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message = "博客标题不能为空")
     private String title;
 
     @Basic(fetch = FetchType.LAZY)
@@ -25,22 +27,24 @@ public class Blog {
     private boolean commentabled;
     private boolean publish;
     private boolean recommend;
+    //@Temporal将Date类型进行格式化
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
+    //一个分类可对应多篇博客
     @ManyToOne
     private Type type;
-
+    //cascade = CascadeType.PERSIST级联新增
     @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Tag> tags = new ArrayList<>();
 
     @ManyToOne
     private User user;
-
+    //mappedBy表示自己是关系的被维护方，在一的一方进行申明
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
-
+    //将其标注的设为临时变量，不会存储到数据库中
     @Transient
     private String tagIds;
 

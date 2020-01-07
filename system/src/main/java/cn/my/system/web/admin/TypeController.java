@@ -1,8 +1,6 @@
 package cn.my.system.web.admin;
-
 import cn.my.system.entity.Type;
 import cn.my.system.service.TypeService;
-import javassist.compiler.ast.ASTree;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -12,7 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import javax.validation.Valid;
 
 @Controller
@@ -43,7 +40,7 @@ public class TypeController {
     新增分类
      */
     @PostMapping("/admin/types")
-    public String Post(@Valid Type type, BindingResult result, RedirectAttributes attributes) {
+    public String addType(@Valid Type type, BindingResult result, RedirectAttributes attributes) {
         Type t = typeService.getTypeByName(type.getName());
         if (t != null) {
             result.rejectValue("name", "nameError", "该分类已存在");
@@ -73,7 +70,7 @@ public class TypeController {
   修改分类
    */
     @PostMapping("/admin/types/{id}")
-    public String EditPost(@Valid Type type, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
+    public String editType(@Valid Type type, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
         Type t = typeService.getTypeByName(type.getName());
         if (t != null) {
             result.rejectValue("name", "nameError", "该分类已存在");
