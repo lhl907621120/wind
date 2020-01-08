@@ -1,4 +1,5 @@
 package cn.my.system.web.admin;
+
 import cn.my.system.entity.Blog;
 import cn.my.system.entity.User;
 import cn.my.system.service.BlogService;
@@ -14,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
@@ -31,7 +33,9 @@ public class BlogController {
 
     @Autowired
     private TagService tagService;
-
+    /*
+    博客列表页面
+     */
     @GetMapping("/blogs")
     public String blogs(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
         model.addAttribute("types", typeService.listType());
@@ -89,7 +93,7 @@ public class BlogController {
         Blog blog = blogService.getBlog(id);
         blog.init();
         model.addAttribute("blog", blog);
-    //回到修改页面
+        //回到修改页面
         return "admin/blogs-input";
     }
 

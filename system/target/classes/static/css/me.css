@@ -73,6 +73,9 @@ padding-bottom: 0.8em!important;
 .m-padded-tb-top {
     padding-bottom: 10em !important;
 }
+.m-padded-tb-bottom {
+    padding-top: 1.5em !important;
+}
 .m-padded-tb-big {
     padding-top: 3em !important;
     padding-bottom: 3em !important;
@@ -103,6 +106,11 @@ padding-bottom: 0.8em!important;
 
 .m-text {
     font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+.m-text-large {
+    font-weight: normal !important;
     letter-spacing: 1px !important;
     line-height: 1.8;
 }

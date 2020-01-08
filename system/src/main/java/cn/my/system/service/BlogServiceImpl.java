@@ -51,6 +51,7 @@ public class BlogServiceImpl implements BlogService {
     public void deleteBlog(Long id) {
         blogRepository.deleteById(id);
     }
+
     /*
     b为原博客，blog为更新内容后的博客
     copyProperties(Object source, Object target)
@@ -60,6 +61,9 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b = blogRepository.findById(id).orElse(null);
+        if (b ==null){
+            throw new NoFoundException("不存在该篇博客");
+        }
         System.out.println(b);
         blog.setUpdateTime(new Date());
         blog.setView(b.getView());

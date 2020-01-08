@@ -24,6 +24,17 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
 
+    @OneToOne(mappedBy = "user")
+    private About about;
+
+    public About getAbout() {
+        return about;
+    }
+
+    public void setAbout(About about) {
+        this.about = about;
+    }
+
     public List<Blog> getBlogs() {
         return blogs;
     }
@@ -44,6 +55,8 @@ public class User {
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", blogs=" + blogs +
+                ", about=" + about +
                 '}';
     }
 
