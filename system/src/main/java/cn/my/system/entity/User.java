@@ -24,7 +24,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
 
-    @OneToOne(mappedBy = "user")
+    @OneToOne(mappedBy = "user", cascade = CascadeType.MERGE)
     private About about;
 
     public About getAbout() {

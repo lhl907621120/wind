@@ -106,10 +106,6 @@ public class BlogController {
         //页面type.id通过${types}属性赋值到controller的blog对象的new一个type，通过typesetId。
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-//        Blog blogByTitle = blogService.getBlogByTitle(blog.getTitle());
-//        if (blogByTitle != null) {
-//            result.rejectValue("title", "nameError", "该博客标题已存在，请重新输入");
-//        }
         if (result.hasErrors()) {
             return "/admin/blogs-input";
         }

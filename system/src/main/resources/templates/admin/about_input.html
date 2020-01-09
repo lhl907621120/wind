@@ -46,7 +46,7 @@
 <!--中间体内容-->
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
-        <form action="#"  method="post" th:action=" @{/admin/about/update/{id}(id=*{id})}" th:object="${about}" class="ui form">
+        <form id="about-form" action="#"  method="post" th:action=" @{/admin/about/{id}(id=*{id})}" th:object="${about}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="field">
             </div>
@@ -61,13 +61,19 @@
                     <input type="text" name="qq" placeholder="QQ号" th:value="*{qq}">
                 </div>
             </div>
-            <div class="field">
-                <div class="ui left labeled input" >
-                    <label class="ui teal basic label">头像</label>
-                    <input  th:value="${users.avatar}" type="text" name="avatar" placeholder="头像URL" >
 
+            <div class="required field">
+            <div class="ui left labeled input">
+                <div class="ui teal basic label">
+                    <label >头像</label>
+                </div>
+                <div class="ui left labeled input">
+                    <input type="text" name="avatar" placeholder="头像URL" th:value="*{user.avatar}">
                 </div>
             </div>
+            </div>
+
+
             <div class="required field">
                 <div class="ui left labeled input">
                     <label class="ui teal basic label">爱好</label>
@@ -89,7 +95,7 @@
             <div class="ui error message"></div>
             <div class="ui right aligned container">
                 <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
-                <button class="ui secondary basic submit button"><i class="ui upload icon"></i>提交</button>
+                <button type="button" id="save-btn" class="ui secondary button">保存</button>
             </div>
         </form>
     </div>
@@ -141,6 +147,9 @@
     });
     $('.ui.dropdown').dropdown({
         on : 'hover'
+    });
+    $('#save-btn').click(function () {
+        $('#about-form').submit();
     });
     $('.ui.form').form({
         fields : {

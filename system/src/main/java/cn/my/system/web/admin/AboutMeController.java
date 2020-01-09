@@ -49,10 +49,16 @@ public class AboutMeController {
     /*
     修改个人信息
      */
-    @PostMapping("/about/update/{id}")
-    public String editInput(@Valid About about, @PathVariable Long id, RedirectAttributes attributes, HttpSession session) {
+    @PostMapping("/about/{id}")
+    public String editInput(@Valid About about,BindingResult result, @PathVariable Long id, RedirectAttributes attributes, HttpSession session) {
         about.setUser((User) session.getAttribute("user"));
         id = 1L;
+        about.setUser(userService.getUser(about.getUser().getId()));
+        User user = userService.getUser(id);
+        System.out.println(user);
+        if (result.hasErrors()) {
+            return "/admin/about_input";
+        }
         About a = aboutService.updateAbout(id, about);
         if (a == null) {
             attributes.addFlashAttribute("message", "修改失败");
