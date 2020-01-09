@@ -37,7 +37,7 @@ public class BlogController {
     博客列表页面
      */
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
+    public String blogs(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model) {
         model.addAttribute("types", typeService.listType());
         model.addAttribute("blog_page", blogService.listBlog(pageable, blog));
         return "admin/blogs";

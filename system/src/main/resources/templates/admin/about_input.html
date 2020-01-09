@@ -46,7 +46,7 @@
 <!--中间体内容-->
 <div class="m-container-small m-padded-tb-big">
     <div class="ui container">
-        <form action="#"  method="post" th:action=" @{/admin/about}" th:object="${about}" class="ui form">
+        <form action="#"  method="post" th:action=" @{/admin/about/update/{id}(id=*{id})}" th:object="${about}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="field">
             </div>
@@ -87,13 +87,6 @@
         <div class="inline fields">
         </div>
             <div class="ui error message"></div>
-<!--            &lt;!&ndash;/*/-->
-<!--            <div class="ui negative message" th:if="${#fields.hasErrors('name')}">-->
-<!--            <i class="close icon"></i>-->
-<!--            <div class="header">验证失败</div>-->
-<!--            <p th:errors="*{name}">提交信息不符合规则</p>-->
-<!--            </div>-->
-<!--            /*/&ndash;&gt;-->
             <div class="ui right aligned container">
                 <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
                 <button class="ui secondary basic submit button"><i class="ui upload icon"></i>提交</button>
@@ -144,7 +137,7 @@
 <!--展开关闭导航栏-->
 <script>
     $('.menu.toggle').click(function () {
-        $('.m-item').toggleClass();
+        $('.m-item').toggleClass('m-mobile-hide');
     });
     $('.ui.dropdown').dropdown({
         on : 'hover'

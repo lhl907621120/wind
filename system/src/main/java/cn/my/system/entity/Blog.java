@@ -88,31 +88,6 @@ public class Blog {
         this.type = type;
     }
 
-    @Override
-    public String toString() {
-        return "Blog{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", firstPicture='" + firstPicture + '\'' +
-                ", flag='" + flag + '\'' +
-                ", description='" + description + '\'' +
-                ", view=" + view +
-                ", appreciation=" + appreciation +
-                ", shareStatement=" + shareStatement +
-                ", commentabled=" + commentabled +
-                ", publish=" + publish +
-                ", recommend=" + recommend +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                ", type=" + type +
-                ", tags=" + tags +
-                ", user=" + user +
-                ", comments=" + comments +
-                ", tagIds='" + tagIds + '\'' +
-                '}';
-    }
-
     public Long getId() {
         return id;
     }

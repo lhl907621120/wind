@@ -27,7 +27,7 @@ public class TagController {
     标签页面
      */
     @GetMapping("/tags")
-    public String tags(@PageableDefault(size = 3, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
+    public String tags(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
         model.addAttribute("page", tagService.listTag(pageable));
         return "admin/tags";
     }

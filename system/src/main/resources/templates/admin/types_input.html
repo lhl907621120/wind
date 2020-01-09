@@ -70,7 +70,6 @@
             <div class="ui error message"></div>
             <!--/*/
             <div class="ui negative message" th:if="${#fields.hasErrors('name')}">
-            <i class="close icon"></i>
             <div class="header">验证失败</div>
             <p th:errors="*{name}">提交信息不符合规则</p>
             </div>
@@ -125,7 +124,7 @@
 <!--展开关闭导航栏-->
 <script>
     $('.menu.toggle').click(function () {
-        $('.m-item').toggleClass();
+        $('.m-item').toggleClass('m-mobile-hide');
     });
     $('.ui.dropdown').dropdown({
         on : 'hover'

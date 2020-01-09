@@ -22,7 +22,7 @@ public class TypeController {
     分类页面
      */
     @GetMapping("/admin/types")
-    public String types(@PageableDefault(size = 3, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
+    public String types(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
         model.addAttribute("page", typeService.listType(pageable));
         return "admin/types";
     }
@@ -73,7 +73,7 @@ public class TypeController {
     public String editType(@Valid Type type, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
         Type t = typeService.getTypeByName(type.getName());
         if (t != null) {
-            result.rejectValue("name", "nameError", "该分类已存在");
+            result.rejectValue("name", "nameError", "该分类已存在,");
         }
         if (result.hasErrors()) {
             return "/admin/types_input";

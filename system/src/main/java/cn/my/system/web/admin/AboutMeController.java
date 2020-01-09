@@ -8,9 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -25,18 +24,42 @@ public class AboutMeController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/about")
-    public String About() {
 
+    /*
+    跳转到关于我界面
+     */
+    @GetMapping("/about")
+    public String About(Model model) {
+        model.addAttribute("aboutme",aboutService.getAbout(1L));
         return "admin/about";
     }
 
+    /*
+    跳转到关于我编辑界面
+     */
+    @GetMapping("/about/{id}/update")
+    public String toInputPage(@PathVariable("id") Long id, Model model) {
+        id =1L;
+        About about = aboutService.getAbout(id);
+        model.addAttribute("about", about);
+        model.addAttribute("users", userService.getUser(1L));
+        return "admin/about_input";
+    }
 
-    @GetMapping("/about/input")
-    public String editInput(Model model, HttpSession session) {
-        model.addAttribute("about", new About());
-        model.addAttribute("users",userService.getUser(1L));
-        return "/admin/about_input";
+    /*
+    修改个人信息
+     */
+    @PostMapping("/about/update/{id}")
+    public String editInput(@Valid About about, @PathVariable Long id, RedirectAttributes attributes, HttpSession session) {
+        about.setUser((User) session.getAttribute("user"));
+        id = 1L;
+        About a = aboutService.updateAbout(id, about);
+        if (a == null) {
+            attributes.addFlashAttribute("message", "修改失败");
+        } else {
+            attributes.addFlashAttribute("message", "修改成功");
+        }
+        return "redirect:/admin/about";
     }
 
 }
