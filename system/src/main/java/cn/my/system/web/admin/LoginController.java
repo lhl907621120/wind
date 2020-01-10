@@ -40,7 +40,9 @@ public class LoginController {
         }
 
     }
-
+    /*
+    注销
+     */
     @GetMapping("admin/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("user");

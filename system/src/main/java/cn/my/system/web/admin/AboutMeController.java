@@ -30,7 +30,7 @@ public class AboutMeController {
      */
     @GetMapping("/about")
     public String About(Model model) {
-        model.addAttribute("aboutme",aboutService.getAbout(1L));
+        model.addAttribute("aboutme", aboutService.getAbout(1L));
         return "admin/about";
     }
 
@@ -39,7 +39,7 @@ public class AboutMeController {
      */
     @GetMapping("/about/{id}/update")
     public String toInputPage(@PathVariable("id") Long id, Model model) {
-        id =1L;
+        id = 1L;
         About about = aboutService.getAbout(id);
         model.addAttribute("about", about);
         model.addAttribute("users", userService.getUser(1L));
@@ -50,19 +50,16 @@ public class AboutMeController {
     修改个人信息
      */
     @PostMapping("/about/{id}")
-    public String editInput(@Valid About about,BindingResult result, @PathVariable Long id, RedirectAttributes attributes, HttpSession session) {
-        about.setUser((User) session.getAttribute("user"));
+    public String editInput(@Valid About about, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
         id = 1L;
-        about.setUser(userService.getUser(about.getUser().getId()));
-        User user = userService.getUser(id);
-        System.out.println(user);
+        about.setUser(userService.getUser(id));//获取到user表中的头像信息
+        User user = userService.getUser(id);//user对象
         if (result.hasErrors()) {
             return "/admin/about_input";
         }
-        User getUser = userService.updateUser(id, user);
         About a = aboutService.updateAbout(id, about);
-        System.out.println(a);
-        System.out.println(getUser);
+        user.setAvatar(aboutService.getAvatar(id));//设置user对象的avatar值为about里的值
+        userService.updateUser(id, user);
         if (a == null) {
             attributes.addFlashAttribute("message", "修改失败");
         } else {

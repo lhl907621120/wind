@@ -41,4 +41,13 @@ public class AboutServiceImpl implements AboutService{
     public About getAbout(Long id) {
         return aboutRepository.getOne(id);
     }
+
+    @Override
+    public String getAvatar(Long id) {
+        About avatarById = aboutRepository.getAvatarById(id);
+        String avatar = avatarById.getAvatar();
+        return avatar;
+    }
+
+
 }
