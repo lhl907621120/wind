@@ -39,7 +39,7 @@ public class Blog {
     @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Tag> tags = new ArrayList<>();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private User user;
     //mappedBy表示自己是关系的被维护方，在一的一方进行申明
     @OneToMany(mappedBy = "blog")

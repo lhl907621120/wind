@@ -59,7 +59,10 @@ public class AboutMeController {
         if (result.hasErrors()) {
             return "/admin/about_input";
         }
+        User getUser = userService.updateUser(id, user);
         About a = aboutService.updateAbout(id, about);
+        System.out.println(a);
+        System.out.println(getUser);
         if (a == null) {
             attributes.addFlashAttribute("message", "修改失败");
         } else {
