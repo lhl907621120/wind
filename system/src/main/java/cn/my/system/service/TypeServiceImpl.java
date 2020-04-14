@@ -7,6 +7,7 @@ import javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -67,11 +68,14 @@ public class TypeServiceImpl implements TypeService {
     }
 
     /*
-    分类按照大小顺序排序，未完成
-    */
+    分类按照大小排序
+     */
     @Override
     public List<Type> listTypeTop(Integer size) {
-        Sort sort = new Sort(Sort.Direction.DESC,"blogs.size");
-        return null;
+        Sort sort = Sort.by(Sort.Direction.DESC, "blogs.size");
+        Pageable pageable = PageRequest.of(0, size, sort);
+        return typeRepository.findTop(pageable);
     }
+
+
 }

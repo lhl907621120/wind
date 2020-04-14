@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping
-public class BlogController {
+public class BlogViewController {
 
     @Autowired
     private BlogService blogService;
@@ -29,7 +29,7 @@ public class BlogController {
     @GetMapping("/")
     public String index(@PageableDefault(size = 7,sort = "updateTime", direction = Sort.Direction.DESC) Pageable pageable, Model model){
         model.addAttribute("page", blogService.listBlog(pageable));
-        model.addAttribute("type",typeService.listTypeTop());
+//        model.addAttribute("type",typeService.listTypeTop());
 
 
 
