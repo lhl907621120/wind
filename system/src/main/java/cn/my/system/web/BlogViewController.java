@@ -30,9 +30,6 @@ public class BlogViewController {
     public String index(@PageableDefault(size = 7,sort = "updateTime", direction = Sort.Direction.DESC) Pageable pageable, Model model){
         model.addAttribute("page", blogService.listBlog(pageable));
 //        model.addAttribute("type",typeService.listTypeTop());
-
-
-
         return "blog";
     }
 }

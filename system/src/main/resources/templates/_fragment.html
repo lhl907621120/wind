@@ -16,9 +16,9 @@
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h1 class="ui green header m-padded-top">Blog</h1>
-            <a href="#" th:href="@{/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="large home icon"></i>首页</a>
-            <a href="#" th:href="@{/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="large idea icon"></i>分类</a>
-            <a href="#" th:href="@{/tags}"class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="large tags icon"></i>标签</a>
+            <a href="#" th:href="@{/index}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="large home icon"></i>首页</a>
+            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="large idea icon"></i>分类</a>
+            <a href="#" th:href="@{/tags/-1}"class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="large tags icon"></i>标签</a>
             <a href="#" th:href="@{/archives}"class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="large clone icon"></i>归档</a>
             <a href="#" th:href="@{/about}"class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="large user icon"></i>关于我</a>
             <div class="m-item right item" >
@@ -39,19 +39,35 @@
 <br>
 <br>
 <!--底部footer-->
-<footer th:fragment="footer" class="ui  vertical segment  navbar-fixed-bottom">
-    <div class="ui center aligned container">
-        <div class="three wide column">
-            <div class="three wide column ">
-                <h5 class="ui  header m-text-thin m-text-spaced ">联系我</h5>
-                <div class="ui  link list">
-                    <a href="#" class="item m-text-thin m-text-spaced" >Email：907621120@qq.com</a>
-                    <a href="#" class="item m-text-thin m-text-spaced">QQ：907621120</a>
+<footer th:fragment="footer" class="ui inverted vertical m-padded-tb-massive">
+    <div class="ui center aligned container m-background fluid">
+        <div class="ui  divided grid">
+            <div class="four wide cloumn">
+            </div>
+            <div class="ui right aligned four wide column">
+                <h4 class="ui inverted header m-opacity m-text-spaced m-margin-bottom  m-padded-right">最新博客</h4>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                    </div>
                 </div>
             </div>
+            <div class="four wide column">
+                <h4 class="ui  header m-opacity m-text-spaced m-margin-bottom  inverted">联系我</h4>
+                <div class="ui inverted link list  ">
+                    <a href="#" class="item">Email：907621120@qq.com</a>
+                    <a href="#" class="item section">QQ：907621120</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui  header m-opacity m-text-spaced m-margin-bottom  inverted">最新博客</h4>
+                <p class=" m-text  m-opacity-tiny m-text-color ">这是我的个人博客，会分享关于编程、写作、思考相关的任何内容，希望可以给来到这的人带来帮助。。。</p>
+            </div>
         </div>
-        <div class=""></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2019 Laihaolong Designed by Laihaolong</p>
+        <div class="ui inverted segment ">
+            <p class="m-text m-text-spaced m-opacity m-padded-tb-segment ">Copyright © 2019 - 2020 Laihaolong Designed by Laihaolong</p>
+        </div>
+
     </div>
 </footer>
 
@@ -64,7 +80,9 @@
     <script src="../static/lib/qrcode/qrcode.js" th:src="@{/lib/qrcode/qrcode.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
     <script src="../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 
 </th:block>
 </body>

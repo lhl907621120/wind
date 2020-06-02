@@ -14,9 +14,18 @@ public class Comment {
     private String nickname;
     private String email;
     private String avatar;
-    private String comment;
+    private String content;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
+    private boolean adminComment;
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
 
     @ManyToOne
     private Blog blog;
@@ -29,7 +38,7 @@ public class Comment {
     主评论类
      */
     @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replycomments = new ArrayList<>();
+    private List<Comment> replyComments = new ArrayList<>();
 
     public Comment getParentComment() {
         return parentComment;
@@ -39,12 +48,12 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
-    public List<Comment> getReplycomments() {
-        return replycomments;
+    public List<Comment> getReplyComments() {
+        return replyComments;
     }
 
-    public void setReplycomments(List<Comment> replycomments) {
-        this.replycomments = replycomments;
+    public void setReplyComments(List<Comment> replyComments) {
+        this.replyComments = replyComments;
     }
 
     public Blog getBlog() {
@@ -88,12 +97,12 @@ public class Comment {
         this.avatar = avatar;
     }
 
-    public String getComment() {
-        return comment;
+    public String getContent() {
+        return content;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public Date getCreateTime() {
@@ -111,11 +120,12 @@ public class Comment {
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 ", avatar='" + avatar + '\'' +
-                ", comment='" + comment + '\'' +
+                ", content='" + content + '\'' +
                 ", createTime=" + createTime +
+                ", adminComment=" + adminComment +
                 ", blog=" + blog +
                 ", parentComment=" + parentComment +
-                ", replycomments=" + replycomments +
+                ", replyComments=" + replyComments +
                 '}';
     }
 }

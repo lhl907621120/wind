@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BlogService {
     //保存博客
@@ -20,6 +21,8 @@ public interface BlogService {
     //通过ID查询博客
     Blog getBlog(Long id);
 
+    //获取并转换
+    Blog getAndConvert(Long id);
     //分页查询博客
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
 
@@ -27,9 +30,18 @@ public interface BlogService {
 
     Page<Blog> listBlog(String query, Pageable pageable);
 
+//    根据tagId分页查询博客
+    Page<Blog> listBlog(Long tagId, Pageable pageable);
+
     //通过标题查询博客
     Blog getBlogByTitle(String title);
 
     //推荐博客列表
     List<Blog> listRecommendBlogTop(Integer size);
+
+    //归档年份列表
+    Map<String,List<Blog>> archiveBlog();
+
+    //获得博客条数
+    Long countBlog();
 }

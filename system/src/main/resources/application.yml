@@ -20,3 +20,5 @@ logging:
     root: info
     com.my: debug
   file: log/Blog.log
+
+comment.avatar: /images/avatar.png

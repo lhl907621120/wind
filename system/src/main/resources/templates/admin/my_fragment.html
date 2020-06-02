@@ -50,10 +50,10 @@
             </div>
             <div class="ui right aligned four wide column">
                 <h4 class="ui inverted header m-opacity m-text-spaced m-margin-bottom  m-padded-right">最新博客</h4>
-                <div class="ui  link list inverted vertical m-text m-padded-right">
-                    <a href="#" class="ui center aligned item">文章1</a>
-                    <a href="#" class="item">文章2</a>
-                    <a href="#" class="item">文章3</a>
+                <div id="newblog-container">
+                    <div class="ui  link list inverted vertical m-text m-padded-right" th:fragment="newBlogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="ui center aligned item" th:each="blog : ${newblogs}" th:text="${blog.title}">文章1</a>
+                    </div>
                 </div>
             </div>
             <div class="four wide column">
@@ -79,6 +79,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
     <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 </body>
 </html>
